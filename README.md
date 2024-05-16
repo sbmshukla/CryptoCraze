@@ -13,3 +13,18 @@ CryptoCraze UI! Dive into the sleek and user-friendly interface designed to elev
 - **Income and Expense Tracking:**  Monitor your income and expenses related to cryptocurrency transactions with dedicated sections, providing insights into your financial activity.
 - **Microservices Integration:** Seamlessly access microservices such as price alerts, market analysis tools, and portfolio performance trackers to enhance your crypto management experience.
 - **Top Cryptocurrency Cards:** Stay updated on the top-performing cryptocurrencies with dynamically updating cards, displaying key information like price, market cap, and 24-hour percentage change.
+
+## Getting Started
+
+To get started with TrendTrack, follow these steps:
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/sbmshukla/cryptocraze.git
+
+2. Open the project in Android Studio.
+
+3. Build and run the project on your Android device or emulator.
+    ```bash
+   Note: It's Just Ui Of The Dashboard Page Of CrptoCraze.
