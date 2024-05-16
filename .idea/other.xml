@@ -4,6 +4,18 @@
     <option name="deviceSelectionList">
       <list>
         <PersistentDeviceSelectionData>
+          <option name="api" value="30" />
+          <option name="brand" value="google" />
+          <option name="codename" value="redfin" />
+          <option name="id" value="redfin" />
+          <option name="manufacturer" value="Google" />
+          <option name="name" value="Pixel 5" />
+          <option name="screenDensity" value="440" />
+          <option name="screenX" value="1080" />
+          <option name="screenY" value="2340" />
+          <option name="selected" value="true" />
+        </PersistentDeviceSelectionData>
+        <PersistentDeviceSelectionData>
           <option name="api" value="27" />
           <option name="brand" value="DOCOMO" />
           <option name="codename" value="F01L" />
@@ -32,6 +44,17 @@
           <option name="id" value="a51" />
           <option name="manufacturer" value="Samsung" />
           <option name="name" value="Galaxy A51" />
+          <option name="screenDensity" value="420" />
+          <option name="screenX" value="1080" />
+          <option name="screenY" value="2400" />
+        </PersistentDeviceSelectionData>
+        <PersistentDeviceSelectionData>
+          <option name="api" value="34" />
+          <option name="brand" value="google" />
+          <option name="codename" value="akita" />
+          <option name="id" value="akita" />
+          <option name="manufacturer" value="Google" />
+          <option name="name" value="Pixel 8a" />
           <option name="screenDensity" value="420" />
           <option name="screenX" value="1080" />
           <option name="screenY" value="2400" />
@@ -68,6 +91,17 @@
           <option name="screenDensity" value="420" />
           <option name="screenX" value="2220" />
           <option name="screenY" value="1080" />
+        </PersistentDeviceSelectionData>
+        <PersistentDeviceSelectionData>
+          <option name="api" value="34" />
+          <option name="brand" value="samsung" />
+          <option name="codename" value="dm3q" />
+          <option name="id" value="dm3q" />
+          <option name="manufacturer" value="Samsung" />
+          <option name="name" value="Galaxy S23 Ultra" />
+          <option name="screenDensity" value="600" />
+          <option name="screenX" value="1440" />
+          <option name="screenY" value="3088" />
         </PersistentDeviceSelectionData>
         <PersistentDeviceSelectionData>
           <option name="api" value="33" />
@@ -192,17 +226,6 @@
           <option name="type" value="WEAR_OS" />
         </PersistentDeviceSelectionData>
         <PersistentDeviceSelectionData>
-          <option name="api" value="30" />
-          <option name="brand" value="google" />
-          <option name="codename" value="redfin" />
-          <option name="id" value="redfin" />
-          <option name="manufacturer" value="Google" />
-          <option name="name" value="Pixel 5" />
-          <option name="screenDensity" value="440" />
-          <option name="screenX" value="1080" />
-          <option name="screenY" value="2340" />
-        </PersistentDeviceSelectionData>
-        <PersistentDeviceSelectionData>
           <option name="api" value="34" />
           <option name="brand" value="google" />
           <option name="codename" value="shiba" />
@@ -237,6 +260,6 @@
         </PersistentDeviceSelectionData>
       </list>
     </option>
-    <option name="selectedCloudProject" value="sipcall-2e8dc" />
+    <option name="selectedCloudProject" value="versatribe-31c83" />
   </component>
 </project>

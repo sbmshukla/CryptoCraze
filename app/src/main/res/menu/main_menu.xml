@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/opt_dashboard"
+        android:icon="@drawable/bottom_btn1"
+        android:title="" />
+    <item android:id="@+id/opt_profile"
+        android:icon="@drawable/bottom_btn2"
+        android:title="" />
+    <item android:id="@+id/opt_scanner"
+        android:title=""
+        android:visible="true"/>
+    <item android:id="@+id/opt_wallet"
+        android:icon="@drawable/bottom_btn3"
+        android:title="" />
+    <item android:id="@+id/opt_setting"
+        android:icon="@drawable/bottom_btn4"
+        android:title="" />
+</menu>

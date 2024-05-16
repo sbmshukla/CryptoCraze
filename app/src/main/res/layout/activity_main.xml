@@ -322,9 +322,11 @@
                 </LinearLayout>
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/list"
+                    android:id="@+id/rv_crypto_wallet"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_4sdp"
                     android:paddingStart="@dimen/_8sdp"
                     android:paddingTop="@dimen/_8sdp"
                     android:paddingEnd="@dimen/_8sdp"
@@ -339,83 +341,17 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
-            <com.google.android.material.bottomappbar.BottomAppBar
+            <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/app_bar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 app:fabCradleMargin="@dimen/_8sdp"
+                app:menu="@menu/main_menu"
+                app:itemActiveIndicatorStyle="@style/App.Custom.Indicator"
                 app:fabCradleRoundedCornerRadius="@dimen/_50sdp"
-                app:fabCradleVerticalOffset="@dimen/_6sdp"
-                app:backgroundTint="@color/black">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.25"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            app:srcCompat="@drawable/bottom_btn1" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.25"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            app:srcCompat="@drawable/bottom_btn2" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.25"
-                        android:orientation="vertical">
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.25"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            app:srcCompat="@drawable/bottom_btn3" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.25"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            app:srcCompat="@drawable/bottom_btn4" />
-                    </LinearLayout>
-                    
-                </LinearLayout>
-
-            </com.google.android.material.bottomappbar.BottomAppBar>
+                app:fabCradleVerticalOffset="@dimen/_8sdp"
+                app:backgroundTint="@color/black"/>
             
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:layout_width="wrap_content"
@@ -425,7 +361,10 @@
                 android:tint="@color/white"
                 app:backgroundTint="@color/light_green"
                 app:layout_anchor="@id/app_bar"
-                app:maxImageSize="@dimen/_25sdp"/>
+                app:layout_anchorGravity="center|center_horizontal"
+                android:layout_gravity="center_horizontal"
+                app:maxImageSize="@dimen/_25sdp"
+                tools:ignore="ContentDescription" />
 
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

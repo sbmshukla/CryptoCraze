@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="cryptoWallet"
+            type="in.sbmshukla.cryptocraze.activity.CryptoWallet" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dark_bg"
+        android:layout_margin="@dimen/_4sdp">
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/btc" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{cryptoWallet.cryptoSymbol}"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintTop_toTopOf="@+id/img_icon"
+            app:layout_constraintStart_toEndOf="@+id/img_icon"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(cryptoWallet.propertyAmount)}"
+            android:textColor="@color/white"
+            app:layout_constrainedWidth="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_title"
+            app:layout_constraintBottom_toBottomOf="@+id/img_icon"
+            app:layout_constraintStart_toStartOf="@+id/tv_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"/>
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balance"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/img_icon"
+            app:layout_constraintTop_toBottomOf="@+id/img_icon"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(cryptoWallet.cryptoBalance)}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_balance"
+            app:layout_constraintTop_toBottomOf="@+id/tv_balance"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:text="@{String.valueOf(cryptoWallet.changePercent)}"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
